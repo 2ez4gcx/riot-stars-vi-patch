@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Ap ban va Viet hoa Riot Stars len dia goc, co kiem sha256 truoc va sau.
 
-Chay:  python apply_patch.py <dia_goc.bin> <riot-stars-vi.rsvi> <dia_ra.bin>
+Chay:  python apply_patch.py <dia_goc.bin> [riot-stars-vi.rsvi] [dia_ra.bin]
+       Mac dinh tao "Riot Stars (VN).bin" + .cue canh dia goc.
 Chi can Python 3, khong can cai them gi.  Khong sua dia goc.
 """
 import hashlib
@@ -68,6 +69,11 @@ def main(src, patch, dst):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 4:
+    if not 2 <= len(sys.argv) <= 4:
         sys.exit(__doc__)
-    main(*sys.argv[1:])
+    src = sys.argv[1]
+    here = os.path.dirname(os.path.abspath(__file__))
+    patch = sys.argv[2] if len(sys.argv) > 2 else os.path.join(here, 'riot-stars-vi.rsvi')
+    dst = sys.argv[3] if len(sys.argv) > 3 else os.path.join(os.path.dirname(os.path.abspath(src)),
+                                                              'Riot Stars (VN).bin')
+    main(src, patch, dst)

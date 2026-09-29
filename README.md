@@ -79,12 +79,13 @@ Trình áp vá **không sửa** file gốc mà tạo file mới, và tự kiểm
 2. Mở cmd / PowerShell / Terminal tại thư mục đó và chạy:
 
 ```
-python apply_patch.py "TEN_FILE_GOC.bin" riot-stars-vi.rsvi riot-stars-vi.bin
+python apply_patch.py "TEN_FILE_GOC.bin"
 ```
 
 (Trên macOS/Linux nếu `python` không có thì dùng `python3`.)
 
-Chương trình tạo `riot-stars-vi.bin` và `riot-stars-vi.cue`, rồi báo
+Chương trình tạo `Riot Stars (VN).bin` và `Riot Stars (VN).cue` ngay cạnh file
+gốc, rồi báo
 **KHOP ban phat hanh** nếu mọi thứ đúng. SHA-256 của đĩa đã vá:
 
 ```
@@ -98,7 +99,7 @@ vá không chứa dữ liệu game.
 
 ## 4. Chơi
 
-Mở `riot-stars-vi.cue` bằng giả lập PS1 (DuckStation, PCSX-Redux, ePSXe…) hoặc
+Mở `Riot Stars (VN).cue` bằng giả lập PS1 (DuckStation, PCSX-Redux, ePSXe…) hoặc
 ghi ra đĩa CD-R. Nếu chỉ có file `.bin`, dùng `tao_cue.bat` để tạo `.cue`.
 
 Không có BIOS gốc: DuckStation chạy được với OpenBIOS (BIOS mã nguồn mở đi kèm
