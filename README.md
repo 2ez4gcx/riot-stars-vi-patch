@@ -13,7 +13,7 @@ chỉnh lên ảnh đĩa đó.
 1. Tải file vá `riot-stars-vi.rsvi` và `apply_patch.py` (mục 0).
 2. Kiểm đĩa gốc Nhật của bạn có SHA-256 bắt đầu bằng `18a138b6` (mục 1–2).
 3. Chạy `apply_patch.py` với đĩa gốc (mục 3). Đĩa gốc không bị sửa.
-4. Kiểm SHA-256 đĩa ra bắt đầu bằng `84b88d320b0784be665cd108ad4a80542dbd5617bc5a22b8632fb4a8e174011d` (mục 4).
+4. Kiểm SHA-256 đĩa ra bắt đầu bằng `b1e870baebca71b83c4deb5ee1e64c09ae14e802af99a96a6d2ad91e768a5c5c` (mục 4).
 5. Mở `Riot Stars (VN).cue` bằng giả lập (mục 6).
 
 Các file trong gói:
@@ -156,10 +156,10 @@ python apply_patch.py "TEN_FILE_GOC.bin" riot-stars-vi.rsvi "Ten khac.bin"
 Tính SHA-256 của file đã vá (cùng cách ở mục 2) và so với:
 
 ```
-84b88d320b0784be665cd108ad4a80542dbd5617bc5a22b8632fb4a8e174011d7a6095b5047214e52a009b70748285b0d4fb2e8e828ff1cc6a36bab3
+b1e870baebca71b83c4deb5ee1e64c09ae14e802af99a96a6d2ad91e768a5c5c7a6095b5047214e52a009b70748285b0d4fb2e8e828ff1cc6a36bab3
 ```
 
-Chỉ cần so 8 ký tự đầu (`84b88d320b0784be665cd108ad4a80542dbd5617bc5a22b8632fb4a8e174011d`). Đúng chuỗi này thì file của bạn giống từng
+Chỉ cần so 8 ký tự đầu (`b1e870baebca71b83c4deb5ee1e64c09ae14e802af99a96a6d2ad91e768a5c5c`). Đúng chuỗi này thì file của bạn giống từng
 byte với bản đã được kiểm thử; mọi lỗi nếu có sẽ không phải do bước áp vá.
 
 `apply_patch.py` đã tạo sẵn file `.cue`. Nếu bạn đổi tên file `.bin` sau đó,
@@ -181,7 +181,7 @@ FILE "Riot Stars (VN).bin" BINARY
   (kích thước sẽ nhỏ hơn 145 MB nhiều), đọc thiếu hoặc thừa sector cuối, đĩa
   thuộc bản in khác, hoặc file từng bị áp một bản vá khác. Cách chắc nhất là
   đọc lại từ đĩa thật bằng ImgBurn ở chế độ BIN/CUE.
-- **Ảnh đã vá không khớp `84b88d320b0784be665cd108ad4a80542dbd5617bc5a22b8632fb4a8e174011d…`:** file `.rsvi` tải hỏng hoặc không phải
+- **Ảnh đã vá không khớp `b1e870baebca71b83c4deb5ee1e64c09ae14e802af99a96a6d2ad91e768a5c5c…`:** file `.rsvi` tải hỏng hoặc không phải
   bản mới nhất; tải lại và áp lên bản gốc.
 
 ## 6. Chạy trên giả lập
